@@ -1,0 +1,43 @@
+public class exercise1 {  
+    public static void main(String[] args) {  
+        // 打印大写的J  
+        printJ();  
+        System.out.println(); // 换行  
+  
+        // 打印大写的A  
+        printA();  
+        System.out.println(); // 换行  
+          
+        // 打印大写的V  
+        printV();  
+        System.out.println(); // 换行  
+          
+        // 再次打印大写的A  
+        printA();  
+        System.out.println(); // 换行  
+    }  
+  
+    // 打印大写J的方法  
+    public static void printJ() {  
+        System.out.println("     J");  
+        System.out.println("     J");  
+        System.out.println("J    J");  
+        System.out.println(" J  J");  
+    }  
+  
+    // 打印大写A的方法  
+    public static void printA() {  
+        System.out.println("   A  ");  
+        System.out.println("  A A ");  
+        System.out.println(" AAAAA");  
+        System.out.println("A     A");  
+    }  
+  
+    // 打印大写V的方法  
+    public static void printV() {  
+        System.out.println(" V     V");  
+        System.out.println("  V   V");  
+        System.out.println("   V V ");  
+        System.out.println("    V  ");  
+    }  
+}
