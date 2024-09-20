@@ -1,0 +1,33 @@
+import java.util.Scanner;  
+  
+public class exercise4 {  
+  
+    public static void main(String[] args) {  
+        // 创建一个Scanner对象，用于从控制台获取用户输入  
+        Scanner scanner = new Scanner(System.in);  
+  
+        // 提示用户输入驾驶距离  
+        System.out.print("请输入驾驶距离（英里）：");  
+        double distance = scanner.nextDouble();  
+  
+        // 提示用户输入汽车的燃油效率  
+        System.out.print("请输入汽车的燃油效率（每加仑英里数）：");  
+        double mpg = scanner.nextDouble();  
+  
+        // 提示用户输入每加仑的价格  
+        System.out.print("请输入每加仑的价格（美元）：");  
+        double pricePerGallon = scanner.nextDouble();  
+  
+        // 计算所需燃油量  
+        double gallonsNeeded = distance / mpg;  
+  
+        // 计算行程成本  
+        double tripCost = gallonsNeeded * pricePerGallon;  
+  
+        // 显示行程成本  
+        System.out.printf("您的行程成本为：$%.2f\n", tripCost);  
+  
+        // 关闭Scanner对象  
+        scanner.close();  
+    }  
+}
