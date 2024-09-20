@@ -1,0 +1,36 @@
+public class exercise3 {  
+  
+    public static void main(String[] args) {  
+        // 当前人口  
+        long currentPopulation = 312032486;  
+  
+        // 每秒的变化数  
+        double birthRatePerSecond = 1.0 / 7.0; // 每7秒生一个孩子  
+        double deathRatePerSecond = 1.0 / 13.0; // 每13秒死一个人  
+        double immigrationRatePerSecond = 1.0 / 45.0; // 每45秒来一个新移民  
+  
+        // 一年的秒数  
+        int secondsPerYear = 365 * 24 * 60 * 60;  
+  
+        // 用于存储每年人口的数组  
+        long[] populationPerYear = new long[5];  
+  
+        // 计算未来五年的人口  
+        for (int i = 0; i < 5; i++) {  
+            // 计算一年后的人口  
+            long newPopulation = currentPopulation;  
+            newPopulation += (long) ((birthRatePerSecond + immigrationRatePerSecond - deathRatePerSecond) * secondsPerYear);  
+  
+            // 存储结果  
+            populationPerYear[i] = newPopulation;  
+  
+            // 更新当前人口  
+            currentPopulation = newPopulation;  
+        }  
+  
+        // 打印结果  
+        for (int i = 0; i < 5; i++) {  
+            System.out.println("未来第 " + (i + 1) + " 年的人口: " + populationPerYear[i]);  
+        }  
+    }  
+}
