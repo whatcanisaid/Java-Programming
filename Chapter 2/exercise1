@@ -7,7 +7,7 @@ public class exercise1 {
         Scanner scanner = new Scanner(System.in);  
   
         // Prompt the user for the radius of the circle and the length of the cylinder
-        System.out.print("请输入圆柱体的半径和长度：");  
+        System.out.print("Please enter the radius and length of the cylinder: ");  
         double radius = scanner.nextDouble();  
         double length = scanner.nextDouble();  
   
