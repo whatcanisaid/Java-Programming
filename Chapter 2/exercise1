@@ -1,0 +1,27 @@
+import java.util.Scanner;  
+  
+public class exercise1 {  
+  
+    public static void main(String[] args) {  
+        // 创建一个Scanner对象，用于从控制台读取输入  
+        Scanner scanner = new Scanner(System.in);  
+  
+        // 提示用户输入圆的半径和圆柱体的长度
+        System.out.print("请输入圆柱体的半径和长度：");  
+        double radius = scanner.nextDouble();  
+        double length = scanner.nextDouble();  
+  
+        // 计算圆的面积（公式：面积 = π * 半径^2）  
+        double circleArea = Math.PI * Math.pow(radius, 2);  
+  
+        // 计算圆柱体的体积（公式：体积 = 圆的面积 * 长度）  
+        double cylinderVolume = circleArea * length;  
+  
+        // 输出结果  
+        System.out.printf("圆的面积为：%.2f\n", circleArea);  
+        System.out.printf("圆柱体的体积为：%.2f\n", cylinderVolume);  
+  
+        // 关闭Scanner对象  
+        scanner.close();  
+    }  
+}
