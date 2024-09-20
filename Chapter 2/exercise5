@@ -3,20 +3,20 @@ import java.util.Scanner;
 public class exercise5 {  
   
     public static void main(String[] args) {  
-        // 创建一个Scanner对象，用于从控制台获取用户输入  
+        // Create a Scanner object to retrieve user input from the console  
         Scanner scanner = new Scanner(System.in);  
   
-        // 提示用户输入六边形的边长  
-        System.out.print("请输入六边形的边长：");  
+        // Prompt the user to input the side length of the hexagon  
+        System.out.print("Please enter the side length of the hexagon: ");  
         double sideLength = scanner.nextDouble();  
   
-        // 计算六边形的面积  
+        // Calculate the area of a hexagon  
         double area = (3 * Math.sqrt(3) / 2) * Math.pow(sideLength, 2);  
   
-        // 显示六边形的面积  
-        System.out.printf("六边形的面积为：%.2f\n", area);  
+        // Display the area of a hexagon  
+        System.out.printf("The area of a hexagon is: %.2f\n", area);  
   
-        // 关闭Scanner对象  
+        // Close Scanner Object  
         scanner.close();  
     }  
 }
