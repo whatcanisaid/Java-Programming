@@ -1,23 +1,23 @@
-public class exercise1 {  
+public class exercise1 {  //print JAVA with J,A,V
     public static void main(String[] args) {  
-        // 打印大写的J  
+        // Print capital J 
         printJ();  
-        System.out.println(); // 换行  
+        System.out.println(); // wrap  
   
-        // 打印大写的A  
+        // Print capital A  
         printA();  
-        System.out.println(); // 换行  
+        System.out.println(); // wrap  
           
-        // 打印大写的V  
+        // Print capital V  
         printV();  
-        System.out.println(); // 换行  
+        System.out.println(); // wrap  
           
-        // 再次打印大写的A  
+        // Print capital A again
         printA();  
-        System.out.println(); // 换行  
+        System.out.println(); // wrap  
     }  
   
-    // 打印大写J的方法  
+    // How to print capital J  
     public static void printJ() {  
         System.out.println("     J");  
         System.out.println("     J");  
@@ -25,7 +25,7 @@ public class exercise1 {
         System.out.println(" J  J");  
     }  
   
-    // 打印大写A的方法  
+    // How to print capital A  
     public static void printA() {  
         System.out.println("   A  ");  
         System.out.println("  A A ");  
@@ -33,7 +33,7 @@ public class exercise1 {
         System.out.println("A     A");  
     }  
   
-    // 打印大写V的方法  
+    // How to print capital V  
     public static void printV() {  
         System.out.println(" V     V");  
         System.out.println("  V   V");  
