@@ -1,0 +1,31 @@
+import java.util.Scanner;  
+  
+public class exercise2 {  
+  
+    public static void main(String[] args) {  
+        // 创建一个Scanner对象来读取用户输入  
+        Scanner scanner = new Scanner(System.in);  
+  
+        // 提示用户输入小计金额和感激费率
+        System.out.print("请输入小计金额和感激费率：");  
+        double subtotal = scanner.nextDouble();  
+        double gratuityRate = scanner.nextDouble();  
+  
+        // 将感激费率从百分比转换为小数  
+        gratuityRate /= 100;  
+  
+        // 计算感激费  
+        double gratuity = subtotal * gratuityRate;  
+  
+        // 计算总额  
+        double total = subtotal + gratuity;  
+  
+        // 一起显示结果  
+        
+        System.out.printf("小计金额：%.2f ,", gratuity);
+        System.out.printf("总额：%.2f\n", total);
+
+        // 关闭Scanner对象  
+        scanner.close();  
+    }  
+}
