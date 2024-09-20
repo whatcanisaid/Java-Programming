@@ -3,30 +3,30 @@ import java.util.Scanner;
 public class exercise3 {  
   
     public static void main(String[] args) {  
-        // 创建一个Scanner对象来读取用户输入  
+        // Create a Scanner object to read user input  
         Scanner scanner = new Scanner(System.in);  
   
-        // 提示用户输入体重（磅）  
-        System.out.print("请输入您的体重（磅）：");  
+        // Prompt user to enter weight (pounds)  
+        System.out.print("Please enter your weight (pounds): ");  
         double weightInPounds = scanner.nextDouble();  
   
-        // 提示用户输入身高（英寸）  
-        System.out.print("请输入您的身高（英寸）：");  
+        // Prompt user for height (inches)  
+        System.out.print("Please enter your height (inches): ");  
         double heightInInches = scanner.nextDouble();  
   
-        // 将磅转换为公斤  
+        // Convert pounds to kilograms  
         double weightInKilograms = weightInPounds * 0.45359237;  
   
-        // 将英寸转换为米  
+        // Convert inches to meters  
         double heightInMeters = heightInInches * 0.0254;  
   
-        // 计算BMI  
+        // Calculate BMI  
         double bmi = weightInKilograms / (heightInMeters * heightInMeters);  
   
-        // 显示BMI  
-        System.out.printf("您的BMI为：%.2f\n", bmi);  
+        // Display BMI  
+        System.out.printf("Your BMI is: %.2f\n", bmi);  
   
-        // 关闭Scanner对象  
+        // Close Scanner Object  
         scanner.close();  
     }  
 }
