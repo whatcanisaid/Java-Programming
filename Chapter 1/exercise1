@@ -1,4 +1,4 @@
-public class exercise1 {  //print JAVA with J,A,V
+public class exercise1 {  // print JAVA with J,A,V
     public static void main(String[] args) {  
         // Print capital J 
         printJ();  
