@@ -5,29 +5,29 @@ public class exercise6 {
     public static void main(String[] args) {  
         Scanner scanner = new Scanner(System.in);  
           
-        // 提示用户输入每月储蓄金额  
-        System.out.println("请输入每月的储蓄金额：");  
+        // Prompt users to input their monthly savings amount  
+        System.out.println("Please enter the monthly savings amount: ");  
         double monthlySavings = scanner.nextDouble();  
           
-        // 年利率为5%  
+        // The annual interest rate is 5%  
         double annualInterestRate = 0.05;  
           
-        // 按月复利的月利率  
+        // Monthly compounded interest rate  
         double monthlyInterestRate = annualInterestRate / 12;  
           
-        // 初始账户价值  
+        // Initial account value  
         double accountValue = 0;  
           
-        // 计算六个月后的账户价值  
+        // Calculate the account value after six months  
         for (int i = 0; i < 6; i++) {  
-            accountValue += monthlySavings; // 加入当月的储蓄金额  
-            accountValue *= (1 + monthlyInterestRate); // 计算复利  
+            accountValue += monthlySavings; // Add the savings amount for the current month  
+            accountValue *= (1 + monthlyInterestRate); // Calculate compound interest  
         }  
           
-        // 显示六个月后的账户价值  
-        System.out.printf("六个月后的账户价值为：%.2f 元\n", accountValue);  
+        // Display the account value after six months  
+        System.out.printf("The account value after six months is: %.2f 元\n", accountValue);  
           
-        // 关闭扫描器  
+        // Close the scanner  
         scanner.close();  
     }  
 }
