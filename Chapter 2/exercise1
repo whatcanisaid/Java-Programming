@@ -3,25 +3,25 @@ import java.util.Scanner;
 public class exercise1 {  
   
     public static void main(String[] args) {  
-        // 创建一个Scanner对象，用于从控制台读取输入  
+        // Create a Scanner object to read input from the console  
         Scanner scanner = new Scanner(System.in);  
   
-        // 提示用户输入圆的半径和圆柱体的长度
+        // Prompt the user for the radius of the circle and the length of the cylinder
         System.out.print("请输入圆柱体的半径和长度：");  
         double radius = scanner.nextDouble();  
         double length = scanner.nextDouble();  
   
-        // 计算圆的面积（公式：面积 = π * 半径^2）  
+        // Calculate the area of the circle (formula: area=π * radius ^ 2)  
         double circleArea = Math.PI * Math.pow(radius, 2);  
   
-        // 计算圆柱体的体积（公式：体积 = 圆的面积 * 长度）  
+        // Calculate the volume of the cylinder (formula: volume=area of the circle * length)  
         double cylinderVolume = circleArea * length;  
   
-        // 输出结果  
-        System.out.printf("圆的面积为：%.2f\n", circleArea);  
-        System.out.printf("圆柱体的体积为：%.2f\n", cylinderVolume);  
+        // Output results  
+        System.out.printf("The area of the circle is: %.2f\n", circleArea);  
+        System.out.printf("The volume of the cylinder is: %.2f\n", cylinderVolume);  
   
-        // 关闭Scanner对象  
+        // Close Scanner Object  
         scanner.close();  
     }  
 }
