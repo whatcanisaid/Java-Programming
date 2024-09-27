@@ -1,7 +1,7 @@
 import java.util.Scanner;  
 import java.util.Random;  
   
-public class exercise 1 {  
+public class exercise1 {  
   
     public static void main(String[] args) {  
         // 生成一个随机的两位数彩票  
