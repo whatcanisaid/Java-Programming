@@ -1,0 +1,59 @@
+import java.util.Scanner;  
+import java.util.Random;  
+  
+public class exercise 1 {  
+  
+    public static void main(String[] args) {  
+        // 生成一个随机的两位数彩票  
+        Random random = new Random();  
+        int lotteryNumber = random.nextInt(100); // 0到99之间，包括0和99  
+  
+        // 提示用户输入一个两位数  
+        Scanner scanner = new Scanner(System.in);  
+        System.out.println("请输入一个两位数：");  
+        int userNumber = scanner.nextInt();  
+  
+        // 格式化用户输入和彩票号码，确保它们都是两位数  
+        String lotteryStr = String.format("%02d", lotteryNumber);  
+        String userStr = String.format("%02d", userNumber);  
+  
+        // 输出彩票号码（用于测试或演示）  
+        System.out.println("彩票号码是：" + lotteryStr);  
+  
+        // 检查用户是否获胜及奖励金额  
+        int reward = checkReward(lotteryStr, userStr);  
+  
+        // 输出结果  
+        if (reward > 0) {  
+            System.out.println("恭喜！你获得了 $" + reward + " 的奖励！");  
+        } else {  
+            System.out.println("很遗憾，你没有中奖。");  
+        }  
+  
+        // 关闭扫描器  
+        scanner.close();  
+    }  
+  
+    private static int checkReward(String lotteryStr, String userStr) {  
+        // 完全匹配  
+        if (lotteryStr.equals(userStr)) {  
+            return 10000;  
+        }  
+  
+        // 所有数字匹配（不考虑顺序）  
+        if (lotteryStr.charAt(0) == userStr.charAt(1) && lotteryStr.charAt(1) == userStr.charAt(0)) {  
+            return 3000;  
+        }  
+  
+        // 一个数字匹配  
+        if (lotteryStr.charAt(0) == userStr.charAt(0) ||   
+            lotteryStr.charAt(0) == userStr.charAt(1) ||   
+            lotteryStr.charAt(1) == userStr.charAt(0) ||   
+            lotteryStr.charAt(1) == userStr.charAt(1)) {  
+            return 1000;  
+        }  
+  
+        // 没有匹配  
+        return 0;  
+    }  
+}
