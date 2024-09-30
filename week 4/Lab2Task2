@@ -1,0 +1,24 @@
+import java.util.Scanner;  
+  
+public class Lab2Task2 {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+  
+        // 提示用户输入秒数  
+        System.out.print("请输入秒数: ");  
+        int totalSeconds = scanner.nextInt();  
+  
+        // 计算分钟  
+        int minutes = totalSeconds / 60;  
+  
+        // 计算剩余秒数  
+        int remainingSeconds = totalSeconds % 60;  
+  
+        // 输出结果  
+        System.out.println("分钟: " + minutes);  
+        System.out.println("剩余秒数: " + remainingSeconds);  
+  
+        // 关闭扫描器  
+        scanner.close();  
+    }  
+}
