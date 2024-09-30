@@ -1,0 +1,15 @@
+public class Lab2Task1 {  
+    public static void main(String[] args) {  
+        // 步骤1：声明一个名为miles的双变量，初始值为100。  
+        double miles = 100;  
+  
+        // 步骤2：声明一个名为KILOMETER_PER_MILE的双常数，其值为1.609。  
+        final double KILOMETER_PER_MILE = 1.609;  
+  
+        // 步骤3：声明一个名为kms的双变量，将miles和KILOMETER_PER_MILE相乘，并将结果指定为公里。  
+        double kms = miles * KILOMETER_PER_MILE;  
+  
+        // 步骤4：在控制台上显示公里数。  
+        System.out.println("公里数: " + kms);  
+    }  
+}
