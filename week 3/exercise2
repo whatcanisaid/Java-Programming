@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exercise2 {
+public class exercise2 {
     public static void main(String[] args) {
         double subtotal, gratuityRate;
         Scanner sc = new Scanner(System.in);
